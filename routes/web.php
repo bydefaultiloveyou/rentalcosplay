@@ -50,4 +50,6 @@ Route::prefix("dashboard")->group(function () {
 
 require __DIR__ . '/debug.php';
 
+require __DIR__ . '/manga.php';
+
 require __DIR__ . '/auth.php';

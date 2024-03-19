@@ -24,32 +24,36 @@ class LoginController extends Controller
         // get user by email in databse
         $user = User::where('email', $request->email)->first();
 
-        // check if user is same
-        if ($user->email == $request->email) {
+        if (!$user) {
+            return redirect()->route('register.create')->with('error', 'User belum terdaftar silahkan daftar terlebih dahulu');
 
-            // check a password
-            if (Hash::check($request->password, $user->password)) {
+            // check if user is same
+            if ($user->email == $request->email) {
 
-                // save to cookie
-                $cookies = [
-                    $this->makeCookie('uuid', ToolsUser::ID('email', $request->email)),
-                    $this->makeCookie('authenticated', true)
-                ];
+                // check a password
+                if (Hash::check($request->password, $user->password)) {
 
-                // save to session
-                $request->session()->put('username', $user->username);
+                    // save to cookie
+                    $cookies = [
+                        $this->makeCookie('uuid', ToolsUser::ID('email', $request->email)),
+                        $this->makeCookie('authenticated', true)
+                    ];
 
-                if ($request->cookie('authAs')) return redirect()
-                    ->route('register.dashboard.create')
-                    ->with('error', 'Silahkan daftar sebagai penguna terlebih dahulu')
-                    ->withCookies([...$cookies, Cookie::forget('authAs')]);
+                    // save to session
+                    $request->session()->put('username', $user->username);
 
-                // redirect to home and show flash
-                return redirect()->route('home.index')->with('success', 'Berhasil Login')->withCookies($cookies);
+                    if ($request->cookie('authAs')) return redirect()
+                        ->route('register.dashboard.create')
+                        ->with('error', 'Silahkan daftar sebagai penguna terlebih dahulu')
+                        ->withCookies([...$cookies, Cookie::forget('authAs')]);
+
+                    // redirect to home and show flash
+                    return redirect()->route('home.index')->with('success', 'Berhasil Login')->withCookies($cookies);
+                }
+
+                // if password in correct redirect
+                return redirect()->route('login.create')->with('error', 'Password salah');
             }
-
-            // if password in correct redirect
-            return redirect()->route('login.create')->with('error', 'Password salah');
         }
 
         // if email not same redirect
