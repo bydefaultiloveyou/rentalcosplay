@@ -13,8 +13,6 @@ use Illuminate\Support\Facades\Cookie;
 use Illuminate\Support\Facades\Hash;
 use Symfony\Component\HttpFoundation\Cookie as HttpFoundationCookie;
 
-use function Laravel\Prompts\password;
-
 class RegisterController extends Controller
 {
     public function create(): View

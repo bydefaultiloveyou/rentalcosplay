@@ -10,13 +10,13 @@
             style="background-image: url({{ asset('img/src/banner.png') }})">
         </div>
 
-        <form action="/manga/search" method="get">
+        {{-- <form action="/manga/search" method="get">
             <div class="mt-10 flex flex-wrap justify-center gap-4">
                 <input type="text" id="Search" name="query" placeholder="Cari judul manga"
                     class="rounded-md border w-[80%] lg:w-[70%] px-2.5 border-gray-200 py-2.5 sm:text-sm" />
                 @include('pages.partials.button')
             </div>
-        </form>
+        </form> --}}
         <div class="px-2 lg:px-0 my-10">
             <p class=" text-3xl lg:text-4xl text-black font-extrabold">Manga Rekomendasi <span
                     class="lg:text-3xl opacity-90 text-primary">#BestForYou</span></p>

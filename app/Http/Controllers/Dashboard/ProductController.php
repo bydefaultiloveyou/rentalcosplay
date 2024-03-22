@@ -41,10 +41,10 @@ class ProductController extends Controller
         $files = $request->file("images");
 
         // save a product
-        $this->saveProduct($request);
+        $id = $this->saveProduct($request);
 
         // save a product id
-        $this->productID = Product::where('slug', $request->slug)->first()->id;
+        $this->productID = Product::where('id', $id)->first()->id;
 
         // upload images
         foreach ($files as $file) {
@@ -91,7 +91,7 @@ class ProductController extends Controller
         $userId = ToolsUser::ID('id', $request->cookie('uuid'));
 
         // store a products
-        return Product::create(['user_id' => $userId, ...$request->all()]);
+        return Product::create(['user_id' => $userId, ...$request->all()])->id;
     }
 
     private function uploadImage($image): bool
