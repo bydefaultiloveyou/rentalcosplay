@@ -24,7 +24,7 @@
             </p>
         </div>
     @elseif(session('error'))
-        <div id="flash" class="bg-green-400 px-4 py-3 text-white">
+        <div id="flash" style="background-color: #f87171;" class="px-4 py-3 text-white">
             <p class="text-center text-sm font-medium">
                 {{ session('error') }}
             </p>
