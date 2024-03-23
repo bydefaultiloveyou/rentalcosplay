@@ -9,7 +9,7 @@
             <div>
                 <div class="relative h-[350px] lg:h-[400px] w-[100%] lg:w-[400px] mb-2">
                     <img id="show-image" src="/storage/products/{{ $product->image[0]->filename }}" alt=""
-                        class="absolute inset-0 h-full w-full object-cover opacity-100" />
+                        class="absolute inset-0 h-full w-full object-cover 100" />
                 </div>
 
 

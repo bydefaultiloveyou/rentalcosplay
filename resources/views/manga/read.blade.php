@@ -5,8 +5,8 @@
     @include('pages.partials.navbar')
     <main class="relative w-full lg:w-4/5 m-auto">
         <div class="my-6">
-            <p class="text-center text-black/90 font-semibold text-lg">{{ request()->query('title') }}</p>
-            <p class=" text-center w-[90%] m-auto mt-2 text-black/90">Manga {{ request()->query('title') }} bisa di nikmati
+            <p class="text-center text-black font-semibold text-lg">{{ request()->query('title') }}</p>
+            <p class=" text-center w-[90%] m-auto mt-2 text-black">Manga {{ request()->query('title') }} bisa di nikmati
                 di
                 website <span class="text-primary font-semibold">MangaPlay</span>
                 support

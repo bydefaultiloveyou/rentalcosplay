@@ -2,7 +2,7 @@
         <div class="mt-4 grid place-items-center rounded-lg border border-gray-200">
             <div class="my-20">
                 <img class="w-80" src="{{ asset('/img/src/data-notfound.png') }}">
-                <p class="text-2xl text-center mt-2 font-semibold text-black/90">Belum Ada Products</p>
+                <p class="text-2xl text-center mt-2 font-semibold text-black">Belum Ada Products</p>
             </div>
         </div>
     @else
@@ -14,7 +14,7 @@
             </div>
 
             <table class="w-full rounded-lg overflow-hidden">
-                <tr class="text-black/80 bg-gray-50 border-b border-gray-200">
+                <tr class="text-black bg-gray-50 border-b border-gray-200">
                     <th class="text-md py-3 w-[8%]">
                         <input type="checkbox" class="size-5 rounded border-gray-300" />
                     </th>
@@ -26,7 +26,7 @@
                 </tr>
                 @if (isset($products))
                     @foreach ($products as $product)
-                        <tr class="text-black/80 border-b border-gray-200 odd:bg-gray-50 last:border-none">
+                        <tr class="text-black border-b border-gray-200 odd:bg-gray-50 last:border-none">
                             <td class="text-center text-md py-3">
                                 <div>
                                     <input type="checkbox" class="size-5 rounded border-gray-300" />

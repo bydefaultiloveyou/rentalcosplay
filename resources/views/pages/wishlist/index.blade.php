@@ -4,7 +4,7 @@
     @include('pages.partials.navbar')
 
     <main class="w-full lg:w-4/5 m-auto">
-        <p class="text-2xl text-black/90 my-6 lg:my-10 font-semibold px-4 lg:px-0">Simpanan nih ye..</p>
+        <p class="text-2xl text-black my-6 lg:my-10 font-semibold px-4 lg:px-0">Simpanan nih ye..</p>
 
         @if (count($wishlists) == 0)
             @include('pages.partials.notfound')

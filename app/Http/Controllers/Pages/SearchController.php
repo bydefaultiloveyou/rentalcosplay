@@ -20,7 +20,7 @@ class SearchController extends Controller
         ]);
     }
 
-    private function getProductByQuery(string $query)
+    private function getProductByQuery(string $query = "")
     {
         return Product::with('image')
             ->with('user')

@@ -3,7 +3,7 @@
         <div class="text-center">
             <h2 class="text-3xl font-extrabold text-black sm:text-5xl">Follow instagram kami</h2>
 
-            <p class="mx-auto mt-4 max-w-sm text-black opacity-75">
+            <p class="mx-auto mt-4 max-w-sm text-black ">
                 Dapatkan info menarik seputar wibu dan pencosplayan di instagram kami
             </p>
 
@@ -16,11 +16,11 @@
         <div class="mt-16 border-t border-gray-100 pt-8 sm:flex sm:items-center sm:justify-between lg:mt-24">
             <ul class="flex flex-wrap justify-center gap-4 text-xs lg:justify-end">
                 <li>
-                    <a href="#" class="text-black transition hover:opacity-75"> Terms & Conditions </a>
+                    <a href="#" class="text-black transition hover:"> Terms & Conditions </a>
                 </li>
 
                 <li>
-                    <a href="#" class="text-black transition hover:opacity-75"> Privacy Policy </a>
+                    <a href="#" class="text-black transition hover:"> Privacy Policy </a>
                 </li>
             </ul>
 
@@ -28,8 +28,7 @@
 
 
                 <li>
-                    <a href="#" rel="noreferrer" target="_blank"
-                        class="text-gray-700 transition hover:opacity-75">
+                    <a href="#" rel="noreferrer" target="_blank" class="text-gray-700 transition hover:">
                         <span class="sr-only">Instagram</span>
 
                         <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">

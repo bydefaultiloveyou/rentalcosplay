@@ -12,7 +12,6 @@
         content="Cosplay, Wibu, Indonesia, RentalCosplay, Rental Cosplay, Rental Costum, Rental, Rental Kostum, Forum, Instagram">
     <meta name="author" content="Miko Meysa Bima">
     @vite('resources/css/app.css')
-    @livewireStyles
 </head>
 
 <body>
@@ -32,13 +31,14 @@
     @endif
 
     @yield('content')
-    @livewireScripts
 
-    <script>
-        setTimeout(() => {
-            document.querySelector("#flash").remove();
-        }, 2000)
-    </script>
+    @if (session()->has('error') or session()->has('success'))
+        <script>
+            setTimeout(() => {
+                document.querySelector("#flash").remove();
+            }, 2000)
+        </script>
+    @endif
 </body>
 
 </html>

@@ -16,19 +16,18 @@
         <div class="mt-16 border-t border-gray-100 pt-8 sm:flex sm:items-center sm:justify-between lg:mt-24">
             <ul class="flex flex-wrap justify-center gap-4 text-xs lg:justify-end">
                 <li>
-                    <a href="#" class="text-gray-500 transition hover:opacity-75"> Terms & Conditions </a>
+                    <a href="#" class="text-gray-500 transition hover:"> Terms & Conditions </a>
                 </li>
 
                 <li>
-                    <a href="#" class="text-gray-500 transition hover:opacity-75"> Privacy Policy </a>
+                    <a href="#" class="text-gray-500 transition hover:"> Privacy Policy </a>
                 </li>
             </ul>
 
             <ul class="mt-8 flex justify-center gap-6 sm:mt-0 lg:justify-end">
 
                 <li>
-                    <a href="#" rel="noreferrer" target="_blank"
-                        class="text-gray-700 transition hover:opacity-75">
+                    <a href="#" rel="noreferrer" target="_blank" class="text-gray-700 transition hover:">
                         <span class="sr-only">Instagram</span>
 
                         <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">

@@ -11,8 +11,8 @@
                 <div class="flex gap-4 items-center border border-gray-200 w-[49%] p-4 rounded-xl bg-gray-50">
                     <img src="/img/svg/store.svg" class="w-12 h-12 bg-primary/20 box-border p-3 rounded-full" />
                     <div class="leading-3">
-                        <p class="font-bold text-lg text-black/90">Iklankan Tokomu</p>
-                        <p class="text-sm text-black/70">Untuk Mengaet Costumer lebih banyak</p>
+                        <p class="font-bold text-lg text-black">Iklankan Tokomu</p>
+                        <p class="text-sm text-black0">Untuk Mengaet Costumer lebih banyak</p>
                     </div>
                 </div>
             </div>

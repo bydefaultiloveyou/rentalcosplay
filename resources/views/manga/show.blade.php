@@ -8,7 +8,7 @@
             <div>
                 <div class="relative h-[350px] lg:h-[600px] w-[100%] lg:w-[400px] mb-2">
                     <img id="show-image" src="{{ $manga->cover }}" alt=""
-                        class="absolute inset-0 h-full w-full rounded-lg object-cover opacity-100" />
+                        class="absolute inset-0 h-full w-full rounded-lg object-cover 100" />
                 </div>
             </div>
 

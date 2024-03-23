@@ -6,15 +6,14 @@
                 <strong class="font-extrabold text-primary sm:block mt-3">Agar Karir makin Mantep</strong>
             </h1>
 
-            <p class="mt-4 sm:text-xl/relaxed opacity-70">
+            <p class="mt-4 sm:text-xl/relaxed ">
                 Cari kostum langsung all in agar gak kayak orang stalking
             </p>
 
             <form action="/search" method="get">
                 <div class="mt-8 flex flex-wrap justify-center gap-4">
-                    <input type="text" id="Search" name="query"
-                        placeholder="Cari Kostum, Karakter, Anime atau Kota"
-                        class="rounded-md border w-[80%] lg:w-[70%] px-2.5 border-gray-200 py-2.5 sm:text-sm" />
+                    <input type="text" name="query" placeholder="Cari Kostum, Karakter, Anime atau Kota"
+                        class="rounded-md border w-full lg:w-[70%] px-4 border-gray-200 py-3" />
                     @include('pages.partials.button')
                 </div>
             </form>

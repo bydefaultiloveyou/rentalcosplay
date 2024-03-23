@@ -1,12 +1,12 @@
    <div class="w-full border border-gray-200 rounded-lg bg-gray-50 mb-8">
-       <p class=" border-b border-gray-200 p-4 text-black/80 font-semibold text-md">Gambar Produk</p>
+       <p class=" border-b border-gray-200 p-4 text-black font-semibold text-md">Gambar Produk</p>
        <div class="p-4">
 
            <input type="file" class="hidden" name="images[]" id="input-file" multiple>
 
            <label for="input-file" id="drop-area"
                class="flex justify-center items-center w-full border border-gray-200 bg-gray-100 h-16 rounded-lg">
-               <p class="text-sm text-black/90">Drag & Drop your files or <span class="text-primary">Browser</span></p>
+               <p class="text-sm text-black">Drag & Drop your files or <span class="text-primary">Browser</span></p>
            </label>
 
 

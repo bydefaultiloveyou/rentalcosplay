@@ -19,7 +19,7 @@
         </form> --}}
         <div class="px-2 lg:px-0 my-10">
             <p class=" text-3xl lg:text-4xl text-black font-extrabold">Manga Rekomendasi <span
-                    class="lg:text-3xl opacity-90 text-primary">#BestForYou</span></p>
+                    class="lg:text-3xl  text-primary">#BestForYou</span></p>
         </div>
 
         @if (count($mangas) == 0)
